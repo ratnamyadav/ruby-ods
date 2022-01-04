@@ -22,7 +22,29 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+For initializing the ODS object
+
+```ruby
+ods = Ruby::Ods::Manager.new('sample1.ods')
+```
+
+For getting sheets
+```ruby
+sheet = ods.sheets[0]
+```
+
+For getting value of columns
+
+```ruby
+sheet[3, :A].value
+```
+
+For saving a value in the row column
+
+```ruby
+sheet[3, :A].value = "2092"
+ods.save
+```
 
 ## Development
 
