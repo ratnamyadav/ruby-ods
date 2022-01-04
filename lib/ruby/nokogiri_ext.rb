@@ -8,7 +8,7 @@ Nokogiri::XML::Element.module_eval do
     attributes.each do |attr, val|
       node.set_attribute(attr, val)
     end
-    ns = node.add_namespace_definition(prefix, Ods::NAMESPACES[prefix])
+    ns = node.add_namespace_definition(prefix, Ruby::Ods::Manager::NAMESPACES[prefix])
     node.namespace = ns
     self.add_child(node)
     node

@@ -6,7 +6,7 @@ require "ruby/ods/version"
 
 Gem::Specification.new do |s|
   s.name = %q{ruby-ods}
-  s.version = "0.1.1"
+  s.version = "0.1.3"
   s.platform      = Gem::Platform::RUBY
   s.licenses      = ["MIT"]
   s.summary       = "Gem for interacting with Ods files"
