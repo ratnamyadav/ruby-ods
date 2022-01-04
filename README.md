@@ -23,6 +23,7 @@ Or install it yourself as:
 For initializing the ODS object
 
 ```ruby
+require 'ruby/ods'
 ods = Ruby::Ods::Manager.new('sample1.ods')
 ```
 
